@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROHIT SHAHI PORTFOLIO</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">ROHIT SHAHI</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active" data-page="home">Home</a></li>
+        <li><a href="about.html" class="nav-link" data-page="about">About</a></li>
+        <li><a href="project.html" class="nav-link" data-page="projects">Projects</a></li>
+        <li><a href="tool.html" class="nav-link" data-page="tools">Tools</a></li>
+        <li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li>
+      </ul>
+      <div class="hamburger">☰</div>
+    </div>
+  </nav>
+
+  <!-- -----------------------------------------  -->
+  <section class="about-banner">
+    <div class="about-banner-content">
+      <h1>CONTACT</h1>
+      <!-- <p>Learn more about my journey, skills, and passion for data analytics and technology.</p> -->
+    </div>
+  </section>
+
+  <!-- ------------------------------------  -->
+
+  <section class="contact-section" id="contact">
+    <div class="contact-container">
+      <!-- Left side: Video -->
+      <div class="contact-video">
+        <video autoplay muted loop playsinline>
+          <source src="contact us animation sticker video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Right side: Form -->
+      <div class="contact-form">
+        <h2>Get in touch</h2>
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+          <input type="text" placeholder="First Name" required>
+          <input type="text" placeholder="Last Name" required>
+          <input type="email" placeholder="Email" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <a href="#" class="submit-btn" onclick="handleSubmit(event)">Submit</a>
+        </form>
+      </div>
+    </div>
+
+    <!-- Notification -->
+    <div id="thankYouPopup" class="thank-you-popup">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <p>Thank you for contacting me!</p>
+      </div>
+    </div>
+  </section>
+  <!-- --------------------------------------------------  -->
+
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+
+      <!-- Address -->
+      <div class="contact-box">
+        <img src="https://img.icons8.com/ios-filled/50/203c2f/marker.png" alt="Address Icon">
+        <div>
+          <h3>Address</h3>
+          <p>Dehradun, Uttarakhand, India</p>
+        </div>
+      </div>
+
+      <!-- Phone -->
+      <div class="contact-box">
+        <img src="https://img.icons8.com/ios-filled/50/203c2f/phone.png" alt="Phone Icon">
+        <div>
+          <h3>Phone</h3>
+          <p>+91-9876543210</p>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="contact-box">
+        <img src="https://img.icons8.com/ios-filled/50/203c2f/new-post.png" alt="Email Icon">
+        <div>
+          <h3>Email</h3>
+          <p>rohitshahi@example.com</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- -----------------------------  -->
+  <section class="stay-in-touch">
+    <h2>Stay in Touch</h2>
+    <p>Your data has a story to tell — and I’m here to help uncover it. Reach out, collaborate, and let’s transform
+      raw information into meaningful action.</p>
+  </section>
+
+  <!-- -----------------------------------------------------  -->
+
+  <footer>
+    <h3>Rohit Shahi | Data Analytics</h3>
+    <div class="social-icons">
+    <a href="https://github.com/rohitshahi540"><img src="github.png" alt="GitHub"></a>
+      <a href="https://www.facebook.com/profile.php?id=61579916094658"><img src="facebook.png" alt="Facebook"></a>
+      <a href="https://www.youtube.com/@rohitshahi_27"><img src="youtube.png" alt="YouTube"></a>
+      <a href="https://www.instagram.com/rohit_shahi27?igsh=NWFicnN0YzBycG9r"><img src="instagram.png" alt="Instagram"></a>
+      <a href="https://x.com/rohitshahi540?t=NIWD3y0R_qRfY2uD_YWYEw&s=09"><img src="twitter.png" alt="Twitter"></a>
+    </div>
+    <p>Email: rohitshahi@example.com</p>
+    <p>Contact: +91-9876543210</p>
+  </footer>
+
+
+
+  <!-- JS LINK  -->
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROHIT SHAHI PORTFOLIO</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo">ROHIT SHAHI</div>
+      <ul class="nav-links">
+         <li><a href="index.html" class="nav-link active" data-page="home">Home</a></li>
+        <li><a href="about.html" class="nav-link" data-page="about">About</a></li>
+        <li><a href="project.html" class="nav-link" data-page="projects">Projects</a></li>
+        <li><a href="tool.html" class="nav-link" data-page="tools">Tools</a></li>
+        <li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li>
+      </ul>
+      <div class="hamburger">☰</div>
+    </div>
+  </nav>
+
+  <!-- -----------------------------------------  -->
+
+  <section class="about-banner">
+    <div class="about-banner-content">
+      <h1>About</h1>
+      <!-- <p>Learn more about my journey, skills, and passion for data analytics and technology.</p> -->
+    </div>
+  </section>
+
+  <!-- -----------------------------------------  -->
+
+    <header class="header-project">
+        <h1>Image Gallery</h1>
+        <div class="btn-container">
+            <button class="btn" id="btn1">Image 1</button>
+            <button class="btn" id="btn2">Image 2</button>
+            <button class="btn active" id="btnAll">All Images</button>
+        </div>
+    </header>
+
+    <div class="gallery">
+        <!-- Image Set 1 -->
+        <div class="gallery-item" data-group="group1">
+            <img src="https://zoomchartswebstorage.blob.core.windows.net/template-gallery/th-20241220-132553-power-bi-crm-analysis-report-thumbnail.png" alt="Beautiful mountain landscape with snow-capped peaks under clear blue sky" class="gallery-img">
+            <div class="image-info">
+                <h3>Mountain Landscape</h3>
+                <p>A breathtaking view of snow-covered mountains under a clear blue sky, perfect for nature photography enthusiasts.</p>
+            </div>
+        </div>
+        <div class="gallery-item" data-group="group1">
+            <img src="https://zoomchartswebstorage.blob.core.windows.net/template-gallery/th-20250530-154429-power-bi-banking-dashboard.png" alt="Modern city skyline at golden hour with tall skyscrapers" class="gallery-img">
+            <div class="image-info">
+                <h3>Urban Skyline</h3>
+                <p>A stunning cityscape featuring modern architecture during golden hour lighting conditions.</p>
+            </div>
+        </div>
+        <div class="gallery-item" data-group="group1">
+            <img src="https://zoomchartswebstorage.blob.core.windows.net/template-gallery/th-20241219-123923-power-bi-email-communication-report-challenge-thumbnail.png" alt="Tropical beach sunset with palm trees silhouetted against colorful sky" class="gallery-img">
+            <div class="image-info">
+                <h3>Tropical Sunset</h3>
+                <p>Serene beach scene with palm trees and vibrant sunset colors reflecting on calm ocean waters.</p>
+            </div>
+        </div>
+        <div class="gallery-item" data-group="group1">
+            <img src="https://zoomchartswebstorage.blob.core.windows.net/template-gallery/th-20240530-160948-movie-industry-insights-power-bi-report-od-contest.png" alt="Mystical forest pathway with sunlight filtering through tall trees" class="gallery-img">
+            <div class="image-info">
+                <h3>Forest Pathway</h3>
+                <p>Enchanting forest trail with sunlight creating magical patterns through the dense canopy.</p>
+            </div>
+        </div>
+
+        <!-- Image Set 2 -->
+        <div class="gallery-item" data-group="group2">
+            <img src="https://zoomchartswebstorage.blob.core.windows.net/template-gallery/th-20240509-140721-udemy-onyx-report-power-bi.webp" alt="Majestic lion resting in the savanna during golden hour" class="gallery-img">
+            <div class="image-info">
+                <h3>Wildlife Portrait</h3>
+                <p>Close-up portrait of a wild lion in its natural habitat showcasing its powerful features.</p>
+            </div>
+        </div>
+        <div class="gallery-item" data-group="group2">
+            <img src="https://zoomchartswebstorage.blob.core.windows.net/template-gallery/th-20240110-152356-na-retail-supply-chain-and-sales-analysis-sushree-jena-thumbnail.webp" alt="Modern architectural masterpiece with geometric designs" class="gallery-img">
+            <div class="image-info">
+                <h3>Modern Architecture</h3>
+                <p>Contemporary building design featuring clean lines and innovative geometric patterns.</p>
+            </div>
+        </div>
+        <div class="gallery-item" data-group="group2">
+            <img src="https://zoomchartswebstorage.blob.core.windows.net/template-gallery/th-20240110-163035-spotify-challenge-report-frida-daniel-thumbnail.png" alt="Gourmet meal presentation with colorful ingredients" class="gallery-img">
+            <div class="image-info">
+                <h3>Culinary Art</h3>
+                <p>Artistically plated gourmet dish with fresh ingredients and vibrant colors.</p>
+            </div>
+        </div>
+        <div class="gallery-item" data-group="group2">
+            <img src="https://zoomchartswebstorage.blob.core.windows.net/template-gallery/th_20231129_142648_vanessa-uzlabots-thumbnail.webp" alt="Colorful abstract painting with fluid shapes and textures" class="gallery-img">
+            <div class="image-info">
+                <h3>Abstract Creation</h3>
+                <p>Expressive abstract artwork featuring dynamic brushstrokes and vibrant color combinations.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for enlarged image view -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeModal">&times;</button>
+            <img src="" alt="" class="modal-img" id="modalImage">
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDesc"></p>
+            </div>
+        </div>
+    </div>
+
+<!-- --------------------------------------------------  -->
+
+  <!-- -----------------------------  -->
+  <section class="stay-in-touch">
+    <h2>Stay in Touch</h2>
+    <p>Have a question or want to collaborate? I'm always open to discussing new projects, creative ideas, or
+      opportunities to be part of your vision.</p>
+  </section>
+
+  <!-- -----------------------------------------------------  -->
+
+  <footer>
+    <h3>Rohit Shahi | Data Analytics</h3>
+    <div class="social-icons">
+     <a href="https://github.com/rohitshahi540"><img src="github.png" alt="GitHub"></a>
+      <a href="https://www.facebook.com/profile.php?id=61579916094658"><img src="facebook.png" alt="Facebook"></a>
+      <a href="https://www.youtube.com/@rohitshahi_27"><img src="youtube.png" alt="YouTube"></a>
+      <a href="https://www.instagram.com/rohit_shahi27?igsh=NWFicnN0YzBycG9r"><img src="instagram.png" alt="Instagram"></a>
+      <a href="https://x.com/rohitshahi540?t=NIWD3y0R_qRfY2uD_YWYEw&s=09"><img src="twitter.png" alt="Twitter"></a>
+    </div>
+    <p>Email: rohitshahi@example.com</p>
+    <p>Contact: +91-9876543210</p>
+  </footer>
+
+
+
+  <!-- JS LINK  -->
+  <script src="script.js"></script>
+</body>
+
+</html>
